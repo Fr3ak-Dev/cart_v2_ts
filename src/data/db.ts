@@ -1,4 +1,19 @@
-export const db = [
+// interface Phone {
+//     id: number;
+//     name: string;
+//     image: string;
+//     description: string;
+//     price: number;
+// }
+
+type Phone = {
+    id: number;
+    name: string;
+    image: string;
+    description: string;
+    price: number;
+}
+export const db: Phone[] = [
     {
         id: 1,
         name: 'Iphone 16 Apple de 256Gb.',
