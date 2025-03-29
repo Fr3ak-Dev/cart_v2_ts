@@ -1,6 +1,14 @@
-export default function Phone({phone, addToCart}) {
+type Phone = {
+    id: number;
+    name: string;
+    image: string;
+    description: string;
+    price: number;
+}
 
-    const { id, name, description, price, image } = phone
+export default function Phone({phone, addToCart} : {phone: Phone, addToCart: (item: Phone) => void}) {
+
+    const { name, description, price, image } = phone
 
     return (
         <div className="col-md-6 col-lg-4 my-4 row align-items-center">

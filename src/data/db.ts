@@ -13,6 +13,7 @@ type Phone = {
     description: string;
     price: number;
 }
+
 export const db: Phone[] = [
     {
         id: 1,
