@@ -6,7 +6,12 @@ type Phone = {
     price: number;
 }
 
-export default function Phone({phone, addToCart} : {phone: Phone, addToCart: (item: Phone) => void}) {
+type PhoneProps = {
+    phone: Phone;
+    addToCart: (item: Phone) => void;
+}
+
+export default function Phone({ phone, addToCart }: PhoneProps) {
 
     const { name, description, price, image } = phone
 
