@@ -1,3 +1,5 @@
+import type { Phone } from '../types'
+
 // interface Phone {
 //     id: number;
 //     name: string;
@@ -5,14 +7,6 @@
 //     description: string;
 //     price: number;
 // }
-
-type Phone = {
-    id: number;
-    name: string;
-    image: string;
-    description: string;
-    price: number;
-}
 
 export const db: Phone[] = [
     {

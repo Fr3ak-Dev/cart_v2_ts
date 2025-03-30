@@ -1,10 +1,4 @@
-type Phone = {
-    id: number;
-    name: string;
-    image: string;
-    description: string;
-    price: number;
-}
+import type { Phone } from '../types'
 
 type PhoneProps = {
     phone: Phone;
